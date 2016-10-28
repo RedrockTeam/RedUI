@@ -18,5 +18,5 @@ $ npm install redui-[components]
 
 ````jsx
 import Button from 'redui-button'
-ReactDOM.render(<Yaerma val='hello word'/>, document.getElementById('container'))
+ReactDOM.render(<Button val='hello word'/>, document.getElementById('container'))
 ````
