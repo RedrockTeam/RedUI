@@ -1,0 +1,22 @@
+{
+  "name": "redui",
+  "version": "1.0.0",
+  "description": "这是一套redrock风格的 UI 组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedrockTeam/RedUI.git"
+  },
+  "keywords": [
+    "redrockUI"
+  ],
+  "author": "webrock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedrockTeam/RedUI/issues"
+  },
+  "homepage": "https://github.com/RedrockTeam/RedUI#readme"
+}
