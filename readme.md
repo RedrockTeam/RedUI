@@ -2,7 +2,7 @@
 
 # RedUI 红岩网校React组件库
 
-[redui.redrockteam.com](http://redui.redrockteam.com) 
+[redui.redrock.team](http://redui.redrock.team) 
 
 # 特性
 
