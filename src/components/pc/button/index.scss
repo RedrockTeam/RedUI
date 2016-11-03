@@ -1,0 +1,83 @@
+@mixin size($fontSize: 14px, $padding: 6px 12px) {
+    padding: $padding;
+    font-size: $fontSize;
+}
+@mixin btn{
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    display: inline-block;
+    border-radius: 20px;
+    outline: none;
+    touch-action: manipulation;
+    text-transform: none;
+}   
+@mixin group1-btn($background, $color, $border: 1px solid transparent) {
+    background: $background;
+    color: $color;
+    border: $border;
+    @include btn;
+}   
+@mixin group2-btn($border, $color) {
+    @include btn;
+    background: #fff;
+    color: $color;
+    border: 1px solid $border;
+}   
+.small {
+    @include size(14px, 6px 12px);
+}
+.normal {
+    @include size(14px, 8px 16px);
+}
+.big {
+    @include size(14px, 10px 20px);
+}
+.group1-main {
+    @include group1-btn(#3ec0cc, #fff); 
+    &:active {
+        color: #8ad4dc;
+    }
+}
+.group1-main-disabled {
+    @include group1-btn(#b2e6eb, #e2f5f7); 
+}
+.group1-secondary {
+    @include group1-btn(#fbfafc, #000, 1px solid #bfbfbf); 
+    &:active {
+        color: #8a8a8b;
+    }
+}
+.group1-secondary-disabled {
+    @include group1-btn(#fbfafc, #8a8a8b, 1px solid #bfbfbf); 
+}
+.group1-warning {
+    @include group1-btn(#dd5050, #fff); 
+    &:active {
+        background: #ce4848;
+        color: #dd8e8e;
+    }
+}
+.group1-warning-disabled {
+    @include group1-btn(#dd5050, #f2c5c5);
+}
+.group2-main {
+    @include group2-btn(#3ec0cc, #3ec0cc); 
+    &:active {
+        border: 1px solid #8bd9e0;
+        color: #8bd9e0;
+    }
+}
+.group2-main-disabled {
+    @include group2-btn(#b8b8b8, #8bd9e0); 
+}
+.group2-secondary {
+    @include group2-btn(#151515, #010101); 
+    &:active {
+        border: 1px solid #737373;
+        color: #8d8d8d;
+    }
+}
+.group2-secondary-disabled {
+    @include group2-btn(#b8b8b8, #cbcbcb);
+}
