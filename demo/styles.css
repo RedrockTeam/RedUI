@@ -18,7 +18,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none; }
@@ -33,7 +33,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none; }
@@ -46,7 +46,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none; }
@@ -61,7 +61,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none; }
@@ -74,7 +74,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none; }
@@ -90,7 +90,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none; }
@@ -100,7 +100,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none;
@@ -116,7 +116,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none;
@@ -129,7 +129,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none;
@@ -145,13 +145,29 @@
   cursor: pointer;
   -webkit-user-select: none;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 4px;
   outline: none;
   touch-action: manipulation;
   text-transform: none;
   background: #fff;
   color: #cbcbcb;
   border: 1px solid #b8b8b8; }
+._3XA2YRuy1LPb_Ht9i1yL8q {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px; }
+
+._3woHF9VxoDhIpULYTeGZ7l {
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; }
+
+._2uG4268iBAjrLnIzhQ5vz8 {
+  border-bottom: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; }
 ._25zQ7ZrHl6FStUuTAAIbdV {
   width: 100%; }
 

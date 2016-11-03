@@ -17,6 +17,19 @@ $ npm install redui-[components]
 # 用例
 
 ````jsx
-import Button from 'redui-button'
-ReactDOM.render(<Button val='hello word'/>, document.getElementById('container'))
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Layout from './components/common/layout/index'
+
+ReactDOM.render(
+    <Layout 
+        style={{
+            margin: '0 auto'
+        }}
+        components = {[
+            [{md: 6, ms: 6, component: <div></div>}]
+        ]}
+    />,
+    document.body
+);
 ````

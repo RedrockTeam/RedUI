@@ -1,0 +1,17 @@
+.caret {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+.down {
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.up {
+    border-bottom: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}

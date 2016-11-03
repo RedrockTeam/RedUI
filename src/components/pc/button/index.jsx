@@ -8,9 +8,9 @@ class Button extends Component {
     }
     render() {
         const buttonSize = this.props.size || 'small'
-        const buttonType = this.props.type || 'main'
+        const buttonType = this.props.type || 'group1-main'
         const disabled = this.props.disabled ? `${buttonType}-disabled` : ''
-        const className = `${css[buttonType]} ${css[buttonSize]} ${css[disabled]}`
+        const className = `${css[buttonType]} ${css[buttonSize]} ${css[disabled] || ''}`
 
         return (
             <button 
@@ -20,12 +20,14 @@ class Button extends Component {
                 className = {className}
             >
                 {this.props.val}
+                {this.props.icon}
             </button>  
         )
     }
 }
 
 Button.propTypes = {
+    icon: React.PropTypes.object,
     type: React.PropTypes.string,
     disabled: React.PropTypes.bool,
     size: React.PropTypes.string,
