@@ -1,0 +1,45 @@
+.redui-btn {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 20px;
+  line-height: 2.55555;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.redui-btn::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border: 1px solid #cacaca;
+  border-radius: 40px;
+  transform-origin: 0 0;
+  transform: scale(0.5);
+}
+
+.redui-btn-disabled {
+  color: #eee;
+}
+
+.redui-btn-disabled::after {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.redui-btn-primary {
+  margin: 0 auto;
+  width: 100%;
+  background: #3ec2cc;
+  color: #fff;
+}
+
+.redui-btn-primary:not(.redui-btn-disabled):active {
+  background-color: #3ec2cc;
+  color: #89d6db;
+}
