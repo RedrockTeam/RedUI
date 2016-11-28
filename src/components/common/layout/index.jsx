@@ -2,20 +2,15 @@ import React, { Component } from 'react'
 import css from './index.scss'
 class Layout extends Component {
     render() {
-        return <div 
-            className = {css['grid-container']}
+        return <div
+            ref='row' 
+            className = {css['row']}
             style = {this.props.style}>
             {
-                this.props.components.map((item) => {
-                    return <div className = {css['row']}>
-                        {
-                            item.map((item) => {
-                                const colClassName = `${css['col-md-' + item.md]} ${css['col-ms-' + item.ms]}`;
-                                return <div className = {colClassName}>
-                                    {item.component}
-                                </div>
-                            })
-                        }
+                this.props.components.map((item, index) => {
+                    const colClassName = `${css['col-md-' + item.md]} ${css['col-ms-' + item.ms]} ${css['col']}`;
+                    return <div className = {colClassName} key = {index} style = {item.style}> 
+                        {item.component}
                     </div>
                 })
             }

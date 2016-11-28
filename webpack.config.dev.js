@@ -4,7 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src/demo.jsx'),
+    entry: {
+        demo: path.resolve(__dirname, 'src/demo.jsx'),
+        drag: path.resolve(__dirname, 'RedUIDrag/src/entry.jsx')
+    },
     module: {
         loaders: [
             {
@@ -26,12 +29,9 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "demo"),
-        filename: "bundle.js"
+        filename: "[name].js"
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            title: 'RedUi组件预览'
-        }), 
         new ExtractTextPlugin('styles.css')
     ]
 };

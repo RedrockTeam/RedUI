@@ -90,20 +90,26 @@
 	        });
 	    },
 	    render: function render() {
-	        return _react2.default.createElement(_index6.default, {
-	            list: [{
-	                val: '默认菜单'
-	            }, {
-	                val: '嘿嘿菜单'
-	            }],
-	            onClick: this.handleButtonClick,
-	            down: this.state.down,
-	            focus: this.state.focus
-	        });
+	        return _react2.default.createElement(
+	            'div',
+	            { style: {
+	                    margin: '10px 10px'
+	                } },
+	            _react2.default.createElement(_index6.default, {
+	                list: [{
+	                    val: '默认菜单'
+	                }, {
+	                    val: '嘿嘿菜单'
+	                }],
+	                onClick: this.handleButtonClick,
+	                down: this.state.down,
+	                focus: this.state.focus
+	            })
+	        );
 	    }
 	});
 
-	_reactDom2.default.render(_react2.default.createElement(Hehe, null), document.body);
+	_reactDom2.default.render(_react2.default.createElement(Hehe, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -21692,7 +21698,10 @@
 	                _react2.default.createElement(_index2.default, {
 	                    style: Object.assign({
 	                        clear: 'right',
-	                        padding: '4px 22px'
+	                        padding: '6px 12px',
+	                        fontSize: '14px',
+	                        borderBottomLeftRadius: '0px',
+	                        background: '#333'
 	                    }, this.props.style),
 	                    icon: dropIcon,
 	                    val: this.props.list[focusIndex].val,
@@ -21850,20 +21859,15 @@
 	            return _react2.default.createElement(
 	                'div',
 	                {
-	                    className: _index2.default['grid-container'],
+	                    ref: 'row',
+	                    className: _index2.default['row'],
 	                    style: this.props.style },
-	                this.props.components.map(function (item) {
+	                this.props.components.map(function (item, index) {
+	                    var colClassName = _index2.default['col-md-' + item.md] + ' ' + _index2.default['col-ms-' + item.ms] + ' ' + _index2.default['col'];
 	                    return _react2.default.createElement(
 	                        'div',
-	                        { className: _index2.default['row'] },
-	                        item.map(function (item) {
-	                            var colClassName = _index2.default['col-md-' + item.md] + ' ' + _index2.default['col-ms-' + item.ms];
-	                            return _react2.default.createElement(
-	                                'div',
-	                                { className: colClassName },
-	                                item.component
-	                            );
-	                        })
+	                        { className: colClassName, key: index, style: item.style },
+	                        item.component
 	                    );
 	                })
 	            );
@@ -21885,7 +21889,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"grid-container":"_25zQ7ZrHl6FStUuTAAIbdV","row":"XNH5vbQVV0qH7sOP3pLLJ","col-md-1":"_3ojv4lPOUwU5uFwlHpEJE4","col-md-2":"k1q7HNBW7AXXRQ2rPHerR","col-md-3":"BPxWjSAtUOOuvbr3CbtW3","col-md-4":"AefLZkDG6ld0jVcKTM_xG","col-md-5":"jhc0OMor2vfsYRlp-YYJJ","col-md-6":"_16_VnxAqvI-ecZSeYstpIY","col-md-7":"_3apYYezihW1ge95h_edYE9","col-md-8":"_3fPDqsjjEDWZ0C7KL2Ma6p","col-md-9":"_1cFM6HczQkEXvMvWEy7bS6","col-md-10":"_2rZvMiP-p-mJUbIF5Npc4i","col-md-11":"_1hXGkeVYTSlTBEno6eXKrq","col-md-12":"_2kK6WpuGCYpipAUzgNvwjg","col-ms-1":"_1yNYIsYlP8ep66tStm33Lb","col-ms-2":"_1yvsijT5UUeIOXhLF_4xhR","col-ms-3":"_2h8q6YpW92oLJgCYK-gChy","col-ms-4":"ZvlyZWG0MVA0nZNtn7xGm","col-ms-5":"_2tUgjFZtKq5Nu8p_PtJTzq","col-ms-6":"_343_A272SYm5DV2Jfwe-Wy","col-ms-7":"xnL_57fCILR4ZcoIy_N8R","col-ms-8":"_3drBTTdQ4oYAyJWqP9xNSR","col-ms-9":"D7P3Tcq7RcCZniZs0vgvf","col-ms-10":"_2lUfDiZrySOqphWeJM7EnI","col-ms-11":"_1DYp7gV2oFu40cTtNDb36I","col-ms-12":"_2J2PEyLdkrLXkB5VB2XNJH"};
+	module.exports = {"row":"XNH5vbQVV0qH7sOP3pLLJ","col":"_3torVyjQzez3NrlThTnUq9","col-md-1":"_3ojv4lPOUwU5uFwlHpEJE4","col-md-2":"k1q7HNBW7AXXRQ2rPHerR","col-md-3":"BPxWjSAtUOOuvbr3CbtW3","col-md-4":"AefLZkDG6ld0jVcKTM_xG","col-md-5":"jhc0OMor2vfsYRlp-YYJJ","col-md-6":"_16_VnxAqvI-ecZSeYstpIY","col-md-7":"_3apYYezihW1ge95h_edYE9","col-md-8":"_3fPDqsjjEDWZ0C7KL2Ma6p","col-md-9":"_1cFM6HczQkEXvMvWEy7bS6","col-md-10":"_2rZvMiP-p-mJUbIF5Npc4i","col-md-11":"_1hXGkeVYTSlTBEno6eXKrq","col-md-12":"_2kK6WpuGCYpipAUzgNvwjg","col-ms-1":"_1yNYIsYlP8ep66tStm33Lb","col-ms-2":"_1yvsijT5UUeIOXhLF_4xhR","col-ms-3":"_2h8q6YpW92oLJgCYK-gChy","col-ms-4":"ZvlyZWG0MVA0nZNtn7xGm","col-ms-5":"_2tUgjFZtKq5Nu8p_PtJTzq","col-ms-6":"_343_A272SYm5DV2Jfwe-Wy","col-ms-7":"xnL_57fCILR4ZcoIy_N8R","col-ms-8":"_3drBTTdQ4oYAyJWqP9xNSR","col-ms-9":"D7P3Tcq7RcCZniZs0vgvf","col-ms-10":"_2lUfDiZrySOqphWeJM7EnI","col-ms-11":"_1DYp7gV2oFu40cTtNDb36I","col-ms-12":"_2J2PEyLdkrLXkB5VB2XNJH"};
 
 /***/ }
 /******/ ]);

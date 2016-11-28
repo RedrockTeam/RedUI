@@ -26,7 +26,7 @@ ReactDOM.render(
 - icon (ReactComponent: value右方图标)
 - disabled {bool: 是否禁用按钮}
 - size {string: small | normal | big}
-- type {string: group[1-2]-[main|secondary|waring]}
+- type {string: group[1-2]-[main|secondary|warning]}
 - style {object: 覆盖样式}
 - className {string: 新增类名}
 - onClick {functon: 点击事件}

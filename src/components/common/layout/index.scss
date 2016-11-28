@@ -1,15 +1,11 @@
-.grid-container {
-    width: 100%;
-}
-.grid-container [class*='col-'], .grid-container [class='row'] {
-    box-sizing: border-box;
-}
-[class*='col-'] {
-    float: left;
-    padding: 20px 20px;
-}
+
 .row {
     width: 100%;
+}
+.col {
+    float: left;
+    padding: 20px 20px;
+    box-sizing: border-box;
 }
 .row:before, .row:after {
     content: "";

@@ -9,6 +9,7 @@ class ButtonGroup extends Component {
                     return <Button
                         key = {index} 
                         val = {item.val}
+                        style = {item.style}
                         type = {this.props.type}
                         size = {this.props.size}
                         disabled={item.disabled}

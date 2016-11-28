@@ -25,7 +25,7 @@
     border: 1px solid $border;
 }   
 .small {
-    @include size(14px, 6px 12px);
+    @include size(12px, 4px 4px);
 }
 .normal {
     @include size(14px, 8px 16px);
@@ -37,6 +37,9 @@
     @include group1-btn(#3ec0cc, #fff); 
     &:active {
         color: #8ad4dc;
+    }
+    &:hover {
+        background: #29b3c0;
     }
 }
 .group1-main-disabled {
